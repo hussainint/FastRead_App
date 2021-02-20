@@ -43,7 +43,7 @@ class RSVP with ChangeNotifier {
   void calculate() {
     if (running == true) {
       Future.delayed(const Duration(milliseconds: 200), () {
-        var list = _text.split(' ');
+        List list = _text.split(' ');
 
         String txt1 = "", txt2 = "", txt3 = "";
         for (var i = 0; i < count; i++) {
